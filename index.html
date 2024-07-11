@@ -1,4 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Cristian Martinez</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+        integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <style>
+        .btn-success {
+            color: white !important; /* Asegura que el texto sea blanco */
+        }
+
+        .btn-success a {
+            color: white !important; /* Asegura que el texto dentro del enlace sea blanco */
+            text-decoration: none; /* Elimina el subrayado del enlace */
+        }
+
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            border-radius: 80%;
+            object-fit: cover;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top data-bs-theme="bg-black">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#Acerca-de-mi">
+                <img src="assets/img/logo.png" class="image-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Mis-trabajos">Trabajos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header id="Hero-Section" class="text-light text-end py-5 mt-5">
+        <br>
+        <div class="container">
+            <div class="ms-auto col-12 col-md-7 ">
+                <h4 class="display-1 fw-bold fs-1">
+                    FullStack Developer 
+                </h4>
+                <p class="fw-semibold my-5">
+                    "...Mi pasión por la tecnología y la programación es lo que me impulsa a crear soluciones innovadoras y eficientes. Mantenerme siempre actualizado con las últimas tendencias y tecnologías ofrece como resultado lo mejor de mi en cada proyecto..."
+                </p>
+                <div class="mb-5 pb-5">
+                    <button class="btn btn-success text-light" onclick="openPDF()">Descargar CV</button>
+                    <button class="btn btn-success text-light" onclick="openLinkedIn()">LinkedIN</button>
+                </div>
+
+                <script>
+                    function openPDF() {
+                        window.open('./assets/doc/cv2024.pdf', '_blank');
+                    }
+
+                    function openLinkedIn() {
+                        window.open('https://www.linkedin.com/in/cristian-martinez-salgado-553307311', '_blank');
+                    }
+                </script>
+            </div>
+        </div>
+    </header>
+
+
+    <section id="Acerca-de-mi" class="container text-center my-4">
+        <h3 class="display-3 fw-semibold my-2">Back-End / Front-End </h3>
+        <br>
+        <br>
+        <img src="assets/img/MyPic.jpg" alt="Cristian Martinez" class="profile-pic">
+        <p class="my-4">
+            Soy un programador Full Stack Pro con experiencia en el desarrollo de aplicaciones web complejas y escalables.
+            Domino tanto el front-end (HTML, CSS, JavaScript, React) como el back-end (Node.js, Express, Python, Django).
+            Mi enfoque se centra en crear soluciones eficientes y seguras, garantizando una excelente experiencia de
+            usuario. Tengo habilidades en bases de datos SQL y NoSQL, así como en la implementación de APIs RESTful.
+            Trabajo con metodologías ágiles y herramientas de control de versiones como Git. Además, poseo experiencia en
+            despliegue de aplicaciones en la nube usando AWS y Docker. Mi pasión por la programación me lleva a estar en
+            constante aprendizaje y adaptación a nuevas tecnologías.
+        </p>
+
+
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <i class="fas fa-thumbs-up fa-3x my-3"></i>
+                <h3 class="my-3 fw-bold">Experiencia</h3>
+                <p class="my-3 fst-italic">
+                    Contamos con la experiencia suficiente en programación y dominio de tecnologías y lenguajes, tanto en
+                    el front-end como en el back-end. Hemos desarrollado soluciones personalizadas para diversas
+                    industrias, asegurando eficiencia y escalabilidad. Nuestro enfoque meticuloso y conocimientos
+                    avanzados garantizan la entrega de productos de alta calidad. Confíe en mí para llevar sus proyectos
+                    al siguiente nivel.
+                </p>
+            </div>
+            <div class="col-12 col-md-4">
+                <i class="fas fa-user-shield fa-3x my-3"></i>
+                <h3 class="my-3 fw-bold">Seguridad</h3>
+                <p class="my-3 fst-italic">
+                    Con una sólida experiencia en desarrollo y seguridad de software, garantizamos que nuestras
+                    aplicaciones son robustas y protegidas contra amenazas. Implementamos las mejores prácticas de
+                    seguridad en cada etapa del desarrollo. Estamos capacitados en la identificación y mitigación de
+                    vulnerabilidades. Utilizamos tecnologías avanzadas para asegurar la integridad y confidencialidad de
+                    los datos. Confíe en nosotros para proporcionar soluciones seguras y fiables.
+                </p>
+            </div>
+            <div class="col-12 col-md-4">
+                
+                <i class="fas fa-handshake fa-3x my-3"></i>
+                <h3 class="my-3 fw-bold">Confianza</h3>
+                <p class="my-3 fst-italic">
+                    Ofrecemos soluciones confiables y de alta calidad. Nos enfocamos en entender las necesidades de
+                    nuestros clientes para entregar resultados que superen sus expectativas. Como expertos seguimos las
+                    mejores prácticas de la industria para garantizar eficiencia y precisión en cada proyecto. La
+                    transparencia y la comunicación constante son pilares en nuestra metodología de trabajo. Confíe en mí
+                    para llevar a cabo sus proyectos con excelencia y compromiso.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="Mis-trabajos" class="my-5 p-5 bg-black">
+        <br>  
+        <h2 class="display-4 fw-bold text-center text-light mb-3">Algunos de mis trabajos </h2>
+
+        <div class="row">
+            <div class="col-12 col-sm-4 py-2 text-end">
+                <div class="card border border-0">
+                    <div class="image-top" style="background-image: url(assets/img/card-1.jpg)"></div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Proyecto Web Iguanas</h5>
+                        <p class="card-text fst-italic">
+                            Explora la increíble diversidad de iguanas de todo el mundo en nuestra página dedicada.
+                            Descubre sus hábitats únicos, colores vibrantes y características fascinantes mientras aprendes
+                            sobre su importancia en los ecosistemas globales. Sumérgete en un viaje educativo y visual
+                            sobre estas.
+                        </p>
+                        <a href="https://cms21funk.github.io/proyecto1/" class="btn btn-success" target="_blank">
+                            Ver más
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-4 py-2 text-end">
+                <div class="card border border-0">
+                    <div class="image-top" style="background-image: url(assets/img/card-2.jpg)"></div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Proyecto Web Cuppon</h5>
+                        <p class="card-text fst-italic">
+                            En esta página descubre las más irresistibles ofertas y descuentos de productos. Encuentra desde
+                            electrónicos, tecnología, Linea Blanca hasta moda con precios muy rebajados y exclusivos. Ahorra
+                            en grande mientras exploras nuestras promociones actualizadas constantemente.
+                        </p>
+                        <button type="button" class="btn btn-success">
+                            Ver más
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-4 py-2 text-end">
+                <div class="card border border-0">
+                    <div class="image-top" style="background-image: url(assets/img/card-3.jpg)"></div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Proyecto Web Harley-Davison</h5>
+                        <p class="card-text fst-italic">
+                            Explora el mundo de Harley-Davidson en nuestra Sitio oficial. Descubre legendarias motocicletas,
+                            desde clásicos modelos hasta las últimas innovaciones tecnológicas. Encuentra tu próxima aventura
+                            sobre dos ruedas con nuestra gama completa de productos y servicios diseñados para ti.
+                        </p>
+                        <button type="button" class="btn btn-success">
+                            Ver más
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Contacto" class="container my-5">
+
+        <h2 class="display-4 fw-bold text-center my-4">Contacto</h2>
+
+        <p class="my-4 d-none d-md-block fst-italic">
+            Si buscas un programador experto y confiable, estás en el lugar correcto. No dudes en contactarme a través del
+            formulario para discutir cómo puedo ayudarte a llevar tus proyectos al siguiente nivel. ¡Espero tu mensaje!
+        </p>
+        <form>
+            <div class="form-group mb-4">
+                <input class="form-control" placeholder="Nombre">
+            </div>
+
+            <div class="form-group mb-4">
+                <input class="form-control" placeholder="Correo electrónico" />
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" placeholder="Escribe aquí tu mensaje"></textarea>
+            </div>
+            <div class="my-3 text-end">
+                <button class="btn btn-success text-light">Enviar</button>
+            </div>
+        </form>
+    </section>
+
+    <footer class="bg-dark text-center text-light p-4">
+        <p class="text-center mb-0">Cristian Martínez Salgado 2024. Todos los derechos reservados.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous">
+    </script>
+</body>
+</html>
+
+
+
+<!--
 <!DOCTYPE html>
 <html lang="en">
 
@@ -234,6 +473,6 @@
         crossorigin="anonymous">
     </script>
 </body>
-</html>
+</html> -->
 
 
