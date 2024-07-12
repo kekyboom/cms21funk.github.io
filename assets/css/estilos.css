@@ -20,9 +20,9 @@ body {
   background-position: center;
 }
 
-p{
+p {
   text-align: justify;
-  }
+}
 
 /* Contacto */
 
@@ -36,8 +36,12 @@ p{
     font-weight: 400;
   }
 
-  .navbar-brand{
+  .navbar-brand {
     width: 100px;
   }
 
+  .navbar-brand img {
+    width: 100%;
+  }
 }
+
