@@ -1,6 +1,6 @@
 body {
   font-family: "Raleway", sans-serif;
-}
+  }
 
 /* Hero Section */
 
@@ -22,6 +22,11 @@ body {
 
 p {
   text-align: justify;
+}
+
+h2{
+  font-family: Impact, "Haettenschweiler", Arial Narrow Bold, sans-serif;
+  font-weight:lighter;
 }
 
 /* Contacto */
